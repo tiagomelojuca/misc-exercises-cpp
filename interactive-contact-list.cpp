@@ -126,7 +126,7 @@ void command_loop(std::map<std::string, std::string> &contact_list) {
 
     do {
         std::cout << "Choose an option:" << std::endl
-                  << "(l)ist, (a)dd, (r)emove, (s)earch, (w)rite, (q)uit"
+                  << "(l)ist, (s)earch, (a)dd, (r)emove, (w)rite, (q)uit"
                   << std::endl
                   << std::endl;
 
