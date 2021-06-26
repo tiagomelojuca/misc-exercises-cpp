@@ -157,7 +157,7 @@ int main() {
 	
 	// Nodais
 	int qtdnodes;																// Quantidade de nos especificada pelo usuario
-	float nodepos[501][3];														// Identifica as posicoes X (0), Y (1) e Z (2) do n�
+	float nodepos[501][3];														// Identifica as posicoes X (0), Y (1) e Z (2) do no
 	int nodeliberdadex[501][2];													// Graus de Liberdade em X, translacao (0) e rotacao (1)
 	int nodeliberdadey[501][2];													// Graus de Liberdade em Y, translacao (0) e rotacao (1)
 	int nodeliberdadez[501][2];													// Graus de Liberdade em Z, translacao (0) e rotacao (1)
@@ -183,7 +183,7 @@ int main() {
 	
 	// Processamento
 	int nnos;																	// Variavel para controle do numero de nos
-	int neq;																	// Quantidade de equa��es (numero de nos * graus de liberdade por no)
+	int neq;																	// Quantidade de equacoes (numero de nos * graus de liberdade por no)
 	int neqlivre = 0;															// Numero de equacoes referentes a deslocabilidades livres
 	int neqfixo = 0;															// Numero de equacoes referentes a deslocabilidades fixas
 	int countL = 0;																// Contagem das desloc livres para ordenacao da matriz de deslocabilidades
@@ -276,7 +276,7 @@ int main() {
 					printf("Mz: ");
 					scanf("%f", &carganodal[i][5]);
 					
-					// Confirma��o de Dados
+					// Confirmacao de Dados
 					printf("\nDADOS: Fx(%.2f), Fy(%.2f), Fz(%.2f), Mx(%.2f), My(%.2f), Mz(%.2f)\n", carganodal[i][0], carganodal[i][1], carganodal[i][2], carganodal[i][3], carganodal[i][4], carganodal[i][5]);
 		
 					printf("\nCONFIRMA DADOS DA CARGA NODAL? ");
@@ -341,7 +341,7 @@ int main() {
 		printf("J:  ");
 		scanf("%f", &barraprops[i][5]);
 		
-		// Confirma��o de Dados
+		// Confirmacao de Dados
 		printf("\nDADOS: NOi(%i), NOf(%i), E(%.2f), G(%.2f), A(%.2f), Iy(%.2f), Iz(%.2f), J(%.2f)\n", barra[i][0], barra[i][1], barraprops[i][0], barraprops[i][1], barraprops[i][2], barraprops[i][3], barraprops[i][4], barraprops[i][5]);
 		
 		printf("\nCONFIRMA DADOS DA BARRA? ");
