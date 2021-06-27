@@ -25,6 +25,10 @@ int main()
       double* currentPtr = arr[i];
       free(currentPtr);
   } free(arr);
+  // Not sure if we should free the arr itself
+  // some people say it is necessary; other say
+  // that it is actually unnecessary (or even wrong)
+  // also, compiler warn when trying to free the arr
   
   // End
   return 0;
