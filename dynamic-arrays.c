@@ -14,7 +14,7 @@ int main()
   // 2D Array
   int nRows, nColumns;
   
-  double **arr = (double**) malloc(nRows * sizeof(double*));
+  double** arr = (double**) malloc(nRows * sizeof(double*));
   for(int i = 0; i < nRows; i++) {
       arr[i] = (double*) malloc(nColumns * sizeof(double));
   }
