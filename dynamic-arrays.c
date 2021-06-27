@@ -29,6 +29,7 @@ int main()
   // some people say it is necessary; other say
   // that it is actually unnecessary (or even wrong)
   // also, compiler warn when trying to free the arr
+  // Just to remind myself to search about this later
   
   // End
   return 0;
