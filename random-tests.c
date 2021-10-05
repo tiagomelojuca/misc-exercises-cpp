@@ -39,6 +39,11 @@ void example2()
     printf(" sArr[0][0] : %p\n", sArr[0][0]);
     printf("&sArr[0][0] : %p\n", &(sArr[0][0]));
     printf("-------------------------------\n");
+    printf(" dArr       : %p\n", dArr);
+    printf(" dArr[0]    : %p\n", dArr[0]);
+    printf(" dArr[0][0] : %p\n", dArr[0][0]);
+    printf("&dArr[0][0] : %p\n", &(dArr[0][0]));
+    printf("-------------------------------\n");
     printf("&sArr[0][0] : %p\n", &(sArr[0][0]));
     printf("&sArr[0][1] : %p\n", &(sArr[0][1]));
     printf("&sArr[0][2] : %p\n", &(sArr[0][2]));
