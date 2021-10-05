@@ -32,7 +32,22 @@ void example2()
     for(int i = 0; i < 3; i++) {
         dArr[i] = (double*) malloc(4 * sizeof(double));
     }
+    dArr[0][0] = 1; dArr[0][1] = 2; dArr[0][2] = 3; dArr[0][3] = 4;
+    dArr[1][0] = 5; dArr[1][1] = 6; dArr[1][2] = 7; dArr[1][3] = 8;
+    dArr[2][0] = 9; dArr[2][1] = 10; dArr[2][2] = 11; dArr[2][3] = 12;
 
+    printf("-------------------------------\n");
+    for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 4; j++) {
+            printf("%4.f ", sArr[i][j]);
+        } printf("\n");
+    }
+    printf("-------------------------------\n");
+    for(int i = 0; i < 3; i++) {
+        for(int j = 0; j < 4; j++) {
+            printf("%4.f ", dArr[i][j]);
+        } printf("\n");
+    }
     printf("-------------------------------\n");
     printf(" sArr       : %p\n", sArr);
     printf(" sArr[0]    : %p\n", sArr[0]);
@@ -137,7 +152,7 @@ void example5()
 int main()
 {
     // example1();
-    // example2();
+    example2();
     // example3();
     // example4();
     // example5();
