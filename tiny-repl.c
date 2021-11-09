@@ -76,7 +76,7 @@ int ProcessInstruction(char* cmd, char* buffer)
 
 // ----------------------------------------------------------------------------
 
-int NextInstruction()
+int ReadInstruction()
 {
     char buffer[BUFSIZE];
 
@@ -106,7 +106,7 @@ int NextInstruction()
 
 int main()
 {
-    while(NextInstruction() != END_LOOP);
+    while(ReadInstruction() != END_LOOP);
     return 0;
 }
 
