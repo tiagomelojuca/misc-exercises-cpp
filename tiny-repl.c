@@ -57,6 +57,13 @@ void HandleCommand3(char* buffer)
 
 // ----------------------------------------------------------------------------
 
+void HandleFallback(char* buffer)
+{
+    printf(CYAN("   ERROR: Unrecognized instruction! <Buffer: %s>"), buffer);
+}
+
+// ----------------------------------------------------------------------------
+
 int ProcessInstruction(char* cmd, char* buffer)
 {
     if(Compare(cmd, "quit")) {
@@ -69,6 +76,8 @@ int ProcessInstruction(char* cmd, char* buffer)
         HandleCommand2(buffer);
     } else if (Compare(cmd, "command3")) {
         HandleCommand3(buffer);
+    } else {
+        HandleFallback(buffer);
     }
 
     return GOTO_NEXT;
